@@ -1,10 +1,9 @@
-var i=0;
-function print ()
+var http=require("http");
+function serve(req,res)
 {
-    console.log(__dirname);
-    console.log(__filename);
-   
+    res.write("RESPNOSE:Server is up and running");
+    res.end();
 }
-print();
-
+var server=http.createServer(serve);
+server.listen(8080);
 

@@ -1,4 +1,4 @@
-var http=require("http");
+const http=require("http");
 function serve(req,res)
 {
     res.write("RESPNOSE:Server is up and running");
